@@ -1,0 +1,29 @@
+name = "Nomo"
+grammar = "nomo"
+path_suffixes = ["nomo"]
+line_comments = ["// "]
+autoclose_before = ":.,=}])>"
+
+[[brackets]]
+start = "{"
+end = "}"
+close = true
+newline = true
+
+[[brackets]]
+start = "("
+end = ")"
+close = true
+newline = false
+
+[[brackets]]
+start = "<"
+end = ">"
+close = false
+newline = false
+
+[[brackets]]
+start = "\""
+end = "\""
+close = true
+newline = false

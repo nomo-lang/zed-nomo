@@ -1,0 +1,16 @@
+id = "nomo"
+name = "Nomo"
+version = "0.1.0"
+schema_version = 1
+authors = ["nomo-lang"]
+description = "Nomo language support for Zed: diagnostics, completion and syntax highlighting."
+repository = "https://github.com/nomo-lang/zed-nomo"
+
+[grammars.nomo]
+repository = "https://github.com/nomo-lang/tree-sitter-nomo"
+# Replace with a real commit SHA once tree-sitter-nomo is pushed.
+rev = "0000000000000000000000000000000000000000"
+
+[language_servers.nomo-lsp]
+name = "Nomo Language Server"
+languages = ["Nomo"]
