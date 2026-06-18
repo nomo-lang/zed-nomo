@@ -11,8 +11,6 @@
   "mut"
   "return"
   "defer"
-  "break"
-  "continue"
   "for"
   "in"
   "as"
@@ -21,6 +19,9 @@
   "match"
   "panic"
 ] @keyword
+
+(break_statement) @keyword
+(continue_statement) @keyword
 
 ; Operators
 [
@@ -65,11 +66,10 @@
 
 ; Enum variant in patterns, e.g. Option.Some
 (pattern
-  (field_access (type_identifier) @type . (type_identifier) @constant))
+  (field_access (type_identifier) @type (type_identifier) @constant))
 
 ; Built-in value
-((identifier) @variable.special
-  (#eq? @variable.special "self"))
+"self" @variable.special
 
 ; Variables (fallback)
 (identifier) @variable
