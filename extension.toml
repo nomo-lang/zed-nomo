@@ -9,7 +9,7 @@ repository = "https://github.com/nomo-lang/zed-nomo"
 [grammars.nomo]
 repository = "https://github.com/nomo-lang/tree-sitter-nomo"
 # Replace with a real commit SHA once tree-sitter-nomo is pushed.
-rev = "6351330aa4ed06abf08cc363382d3137fc0444d9"
+rev = "6ec4ce7baa0584fbadb93ada59ff384c51f3cd74"
 
 [language_servers.nomo-lsp]
 name = "Nomo Language Server"
