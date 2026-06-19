@@ -14,3 +14,5 @@ rev = "c5f88d8df5d0a8c95f65057a44225066be670f8b"
 [language_servers.nomo-lsp]
 name = "Nomo Language Server"
 languages = ["Nomo"]
+language_ids = { "Nomo" = "nomo" }
+code_action_kinds = ["quickfix", "refactor", "refactor.extract", "source"]
